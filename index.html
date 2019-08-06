@@ -2,8 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://patrickhaussmann.de/" />
+    <meta name="description" content="Personal Homepage of Patrick Haußmann">
+    <meta name="author" content="Patrick Haußmann">
+    <meta name="web_author" content="Patrick Haußmann">
+    <link rel="author" href="https://patrickhaussmann.de/" />
+    <meta name="language" content="en">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="index,follow">
+    <link rel="manifest" href="/manifest.json">
     <title>Patrick Haußmann</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <script>
+    if(location.protocol == 'http:') location.protocol = 'https:';
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker registered', reg))
+        .catch(err => console.error('Service Worker **not** registered', err));
+    }
+    else {
+      console.warn('Service Worker not supported in this browser');
+    }    
+  </script>
+  <meta name="theme-color" content="#111111">
+
+
     <style> 
 
       body {
