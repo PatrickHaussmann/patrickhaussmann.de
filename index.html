@@ -4,68 +4,79 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <title>Patrick Haußmann</title>
     {% include meta %}
-        
-    <style> 
-      body {
-        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: calc(10px + 0.33vw);
-        padding: 5vh 10vw;
-        color: #111111;
-      }
-      h1 {
-        font-size: 4.5em;
-        margin-bottom: 0;
-      }
-      .my-name{
-        font-size:2.2em;
-        font-weight: 500;
-      }
-      p{
-        font-size: 1.6em;
-        font-weight: 300;
-        line-height: 1.4;
-        max-width: 26em;
-      }
-      img {
-        border-radius: 50%;
 
-        max-width: 20em;
-      }
-      a {
-        text-decoration: none;
-        color: #111111;
-        position: relative;
-      }
-      a:after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 65%;
-        bottom: 0;
-        left: -0.05em;
-        right: -0.05em;
-        transition: top 180ms cubic-bezier(0, .8, .1, 1);
-        background-color: rgba(65,80,230,0.5);
-      }
-      a:hover:after {
-        top: 0%;
-      }
-      small{
-        font-size: inherit;
-        display: inline-block;
-      }
+    <style>
+        body {
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: calc(10px + 0.33vw);
+            padding: 5vh 10vw;
+            color: #111111;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            margin-bottom: 0;
+        }
+
+        .my-name {
+            font-size: 2.2em;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.6em;
+            font-weight: 300;
+            line-height: 1.4;
+            max-width: 26em;
+        }
+
+        img {
+            border-radius: 50%;
+
+            max-width: 20em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111111;
+            position: relative;
+        }
+
+        a:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 65%;
+            bottom: 0;
+            left: -0.05em;
+            right: -0.05em;
+            transition: top 180ms cubic-bezier(0, .8, .1, 1);
+            background-color: rgba(65, 80, 230, 0.5);
+        }
+
+        a:hover:after {
+            top: 0%;
+        }
+
+        small {
+            font-size: inherit;
+            display: inline-block;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Hello.</h1>
     <p class="my-name">My name is Patrick Haußmann.</p>
     <img src="me.jpg" alt="picture of me">
     <p>I am a physics student in Munich, Germany at <a href="https://www.en.uni-muenchen.de/">LMU</a>.</p>
-    <p>My interests are physics, math, mountain biking, photography, programming (some of my work is on <small><a href="https://github.com/PatrickHaussmann">Github</a>)</small></p>
+    <p>My interests are physics, math, mountain biking, photography, programming (some of my work is on <small><a
+                href="https://github.com/PatrickHaussmann">Github</a>)</small></p>
     <p>You can contact me via <a href="https://keybase.io/patrickhaussmann">Keybase</a> or <br>
-       mail&#64;<span style="display:none !important;">NOSPAM-REMOVE</span>patrickhaussmann.de </p>
-  </body>
+        mail&#64;<span style="display:none !important;">NOSPAM-REMOVE</span>patrickhaussmann.de </p>
+</body>
+
 </html>
