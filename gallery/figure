@@ -4,7 +4,7 @@
 <a href="https://ik.imagekit.io/patrickhaussmann/tr:n-gallery_medium/photography/{{include.id}}.jpg"
     class="item{% if include.portrait %} portrait{% endif %}{% if include.big %} big{% endif %}"
     data-size="{% if include.size %}{{include.size}}{% else %}6000x4000{% endif %}" data-med-size="{{w|default:300|times:2}}x{{h|default:200|times:2}}"
-    data-med="https://ik.imagekit.io/patrickhaussmann/tr:w-{{w|default:300|times:2}},h-{{h|default:200|times:2}},f-auto/photography/{{include.id}}.jpg">
-    <img src="https://ik.imagekit.io/patrickhaussmann/tr:w-{{w|default:300}},h-{{h|default:200}},f-auto/photography/{{include.id}}.jpg"
+    data-med="https://ik.imagekit.io/patrickhaussmann/tr:w-{{w|default:300|times:2}},f-auto/photography/{{include.id}}.jpg">
+    <img src="https://ik.imagekit.io/patrickhaussmann/tr:w-{{w|default:300}},f-auto/photography/{{include.id}}.jpg"
         alt="{{include.alt}}" />
 </a>
