@@ -1,3 +1,4 @@
+{% if include.id and include.id != '' %}
 {% assign w = 300 %}{% assign h = 200 %}
 {% if include.big %}{% assign w = 300 | times: 2 %}{% assign h = 200 | times: 2 %}{% endif %}
 {% if include.portrait %}{% assign h = 200 | times: 2 %}{% endif %}
@@ -8,3 +9,4 @@
     <img src="https://ik.imagekit.io/patrickhaussmann/tr:w-{{w|default:300}},f-auto/photography/{{include.id}}.jpg"
         alt="{{include.alt}}" />
 </a>
+{% endif %}
