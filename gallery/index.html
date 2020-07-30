@@ -36,18 +36,40 @@
             object-fit: cover;
         }
 
-        .gallery .portrait {
-            grid-row: span 2;
+        @media (min-width: 600px) {
+            .gallery .portrait {
+                grid-row: span 2;
+            }
+
+            .gallery .big {
+                grid-row: span 2;
+                grid-column: span 2;
+            }
+
+            .gallery .portrait.big {
+                grid-row: span 3;
+                grid-column: span 2;
+            }
         }
 
-        .gallery .big {
-            grid-row: span 2;
-            grid-column: span 2;
+        .inline-heading h2 {
+            text-align: center;
+            margin: 0;
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
         }
 
-        .gallery .portrait.big {
-            grid-row: span 3;
-            grid-column: span 2;
+        .inline-heading {
+            position: relative;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .inline-heading:active {
+            color: black;
         }
     </style>
 </head>
