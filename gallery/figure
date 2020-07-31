@@ -2,11 +2,11 @@
 {% assign w = 300 %}{% assign h = 200 %}
 {% if include.big %}{% assign w = 300 | times: 2 %}{% assign h = 200 | times: 2 %}{% endif %}
 {% if include.portrait %}{% assign h = 200 | times: 2 %}{% endif %}
-<a href="https://res.cloudinary.com/patrickhaussmann/image/upload/w_1400/v1596137510/photography/{{include.id}}"
+<a href="https://res.cloudinary.com/patrickhaussmann/image/upload/w_1400/v1596137510/photography/{% if folder %}{{folder}}/{% endif %}{{include.id}}"
     class="item{% if include.portrait %} portrait{% endif %}{% if include.big %} big{% endif %}"
     data-size="{% if include.size %}{{include.size}}{% else %}6000x4000{% endif %}" data-med-size="{{w|default:300|times:2}}x{{h|default:200|times:2}}"
-    data-med="https://res.cloudinary.com/patrickhaussmann/image/upload/w_{{w|default:300|times:2}}/v1596137510/photography/{{include.id}}">
-    <img src="https://res.cloudinary.com/patrickhaussmann/image/upload/w_{{w|default:300}}/v1596137510/photography/{{include.id}}"
+    data-med="https://res.cloudinary.com/patrickhaussmann/image/upload/w_{{w|default:300|times:2}}/v1596137510/photography/{% if folder %}{{folder}}/{% endif %}{{include.id}}">
+    <img src="https://res.cloudinary.com/patrickhaussmann/image/upload/w_{{w|default:300}}/v1596137510/photography/{% if folder %}{{folder}}/{% endif %}{{include.id}}"
         alt="{{include.alt}}" />
 </a>
 {% endif %}
