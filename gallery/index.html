@@ -45,6 +45,10 @@
                 grid-row: span 2;
             }
 
+            .gallery .wide {
+                grid-column: span 2;
+            }
+
             .gallery .big {
                 grid-row: span 2;
                 grid-column: span 2;
@@ -85,6 +89,7 @@
                 {% include_relative figure id="" size="6000x4000" %} 
                 {% include_relative figure id="" size="6000x4000" big=true %} 
                 {% include_relative figure id="" size="6000x4000" portrait=true %} 
+                {% include_relative figure id="" size="6000x4000" wide=true %} 
             -->
 
             <div class="inline-heading"
