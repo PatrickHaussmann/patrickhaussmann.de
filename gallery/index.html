@@ -40,6 +40,18 @@
             object-fit: cover;
         }
 
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-auto-rows: 100px;
+            }
+
+            .gallery img {
+                min-width: 0;
+                min-height: 0;
+            }
+        }
+
         @media (min-width: 400px) {
             .gallery .portrait {
                 grid-row: span 2;
@@ -116,20 +128,20 @@
 
             {% assign folder = "city" %}
             {% include_relative figure id="6e085ba6_v3sfvk" size="4000x6000" portrait=true %}
-            {% include_relative figure id="f5c6f31a_nw9pp6" size="4000x6000" portrait=true %}
-            {% include_relative figure id="669ff2bf_skj7ni" size="6000x4000" %}
-            {% include_relative figure id="6e9d6736_de29n4" size="6000x4000" %}
             {% include_relative figure id="0dde0c32_ozyshf" size="6000x4000" wide=true %}
-            {% include_relative figure id="5c516fbc_pp2tys" size="6000x4000" big=true %}
-            {% include_relative figure id="eb79d094_lwkial" size="6000x3773" portrait=true %}
-            {% include_relative figure id="5e2bfffe_fgjmpt" size="6000x4000" %}
-            {% include_relative figure id="57be03de_txl04v" size="4000x6000" %}
             {% include_relative figure id="6429edd3_gt6i5v" size="6000x4000" big=true %}
+            {% include_relative figure id="f5c6f31a_nw9pp6" size="4000x6000" portrait=true %}
+            {% include_relative figure id="6e9d6736_de29n4" size="6000x4000" %}
+            {% include_relative figure id="eb79d094_lwkial" size="6000x3773" portrait=true %}
             {% include_relative figure id="e2fd8c76_wn3dsi" size="4000x6000" portrait=true %}
             {% include_relative figure id="ff0f9724_ehom93" size="6000x4000" big=true %}
+            {% include_relative figure id="669ff2bf_skj7ni" size="6000x4000" %}
             {% include_relative figure id="73d3055f_snydjk" size="6000x4000" %}
             {% include_relative figure id="207babb6_r8vaf6" size="6000x4000" %}
+            {% include_relative figure id="57be03de_txl04v" size="4000x6000" %}
             {% include_relative figure id="b8af0e1d_g3p1g4" size="6000x4000" %}
+            {% include_relative figure id="5c516fbc_pp2tys" size="6000x4000" big=true %}
+            {% include_relative figure id="5e2bfffe_fgjmpt" size="6000x4000" %}
             {% include_relative figure id="57458199_tewbbu" size="6000x4000" big=true %}
             {% include_relative figure id="1b673663_me2b6c" size="6000x4000" %}
             {% assign folder = false %}
