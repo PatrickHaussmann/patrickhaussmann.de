@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://patrickhaussmann.de/" />
+<link rel="canonical" href="https://patrickhaussmann.de{{page.url}}" />
 <meta name="description" content="Personal Homepage of Patrick Haußmann">
 <meta name="author" content="Patrick Haußmann">
 <meta name="web_author" content="Patrick Haußmann">
